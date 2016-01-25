@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/lib-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primary"
+    android:orientation="vertical">
+
+    <com.pkmmte.view.CircularImageView
+        android:id="@+id/imgProfilePic"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:src="@drawable/doge"
+        app:civ_border="true"
+        app:civ_borderColor="#FFFFFFFF"
+        app:civ_borderWidth="4dp"
+        app:civ_selector="true"
+        app:civ_selectorColor="#4403a9f4"
+        app:civ_selectorStrokeColor="#aa5677fc"
+        app:civ_selectorStrokeWidth="4dp"
+        app:civ_shadow="true" />
+
+    <com.neopixl.pixlui.components.textview.TextView
+        android:id="@+id/txtShopName"
+        style="@style/AppTheme.StyledText.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imgProfilePic"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"
+        android:gravity="left"
+        android:paddingBottom="4dp"
+        android:text="Akash Bangad"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+
+    <com.neopixl.pixlui.components.textview.TextView
+        android:id="@+id/txtAmount"
+        style="@style/AppTheme.StyledText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtShopName"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="35dp"
+        android:gravity="left"
+        android:paddingBottom="4dp"
+        android:text=""
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+</RelativeLayout>

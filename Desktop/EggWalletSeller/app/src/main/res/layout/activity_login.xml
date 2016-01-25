@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llLogin"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/paper"
+    android:orientation="vertical"
+
+    >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_center" />
+
+    <com.egneese.sellers.ui.CustomEditText
+        android:id="@+id/etPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="40dip"
+        android:background="@drawable/abc_alpha_top_et_login_background"
+        android:hint="@string/phone"
+        android:inputType="number"
+        android:padding="10dip"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="#DDAAAAAA"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="16sp" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.egneese.sellers.ui.CustomEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/abc_alpha_bottom_et_login_background"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="10dip"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="#DDAAAAAA"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="16sp">
+
+        </com.egneese.sellers.ui.CustomEditText>
+
+        <com.neopixl.pixlui.components.textview.TextView
+            android:id="@+id/txtShowPassword"
+            style="@style/AppTheme.StyledText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/etPassword"
+            android:layout_alignRight="@+id/etPassword"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:paddingBottom="2dip"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:paddingTop="2dip"
+            android:text="show"
+            android:textColor="@color/dirty_white"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <com.neopixl.pixlui.components.textview.TextView
+        android:id="@+id/txtForgotPassword"
+        style="@style/AppTheme.StyledText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dip"
+        android:padding="5dip"
+        android:text="@string/forgot_password"
+        android:textColor="@color/dirty_white"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/abc_alpha_btn_background"
+            android:text="Login"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+</LinearLayout>

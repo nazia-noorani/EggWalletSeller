@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/paper"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_center" />
+
+    <com.egneese.sellers.ui.CustomEditText
+        android:id="@+id/etPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="50dip"
+        android:background="@drawable/abc_alpha_top_et_login_background"
+        android:hint="@string/phone"
+        android:inputType="number"
+        android:padding="10dip"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="#DDAAAAAA"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="16sp" />
+
+
+    <com.egneese.sellers.ui.CustomEditText
+        android:id="@+id/etShopName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:background="@drawable/abc_alpha_bottom_et_login_background"
+        android:hint="@string/shop_name"
+        android:padding="10dip"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="#DDAAAAAA"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="16sp" />
+
+    <com.neopixl.pixlui.components.textview.TextView
+        android:id="@+id/txtAgreement"
+        style="@style/AppTheme.StyledText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="40dip"
+        android:layout_marginTop="20dip"
+        android:gravity="left"
+        android:text="@string/agreement_sentence"
+        android:textColor="@color/grey"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/abc_alpha_btn_background"
+            android:text="@string/register"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>
