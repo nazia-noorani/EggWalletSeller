@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/paper"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.egneese.sellers.ui.CustomEditText
+            android:id="@+id/etOTP"
+            android:background="@drawable/abc_alpha_top_et_login_background"
+            android:padding="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="50dip"
+            android:hint="@string/otp"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="#DDAAAAAA"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.egneese.sellers.ui.CustomEditText
+                android:background="@drawable/abc_et_background"
+                android:id="@+id/etPassword"
+                android:padding="10dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="0dip"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="-1.1dip"
+                android:hint="@string/register_activity_password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="#DDAAAAAA"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="16sp" />
+
+            <com.neopixl.pixlui.components.textview.TextView
+                android:id="@+id/txtShowPassword"
+                style="@style/AppTheme.StyledText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/etPassword"
+                android:layout_alignRight="@+id/etPassword"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:paddingBottom="2dip"
+                android:paddingLeft="5dip"
+                android:paddingRight="8dip"
+                android:paddingTop="2dip"
+                android:text="show"
+                android:textColor="@color/dirty_white" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.egneese.sellers.ui.CustomEditText
+                android:background="@drawable/abc_alpha_bottom_et_login_background"
+                android:id="@+id/etConfirmPassword"
+                android:padding="10dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="0dip"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="-1.1dip"
+                android:hint="@string/register_activity_reenter_password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="#DDAAAAAA"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="16sp" />
+
+            <com.neopixl.pixlui.components.textview.TextView
+                style="@style/AppTheme.StyledText"
+                android:id="@+id/txtShowConfirmPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/etConfirmPassword"
+                android:layout_alignRight="@+id/etConfirmPassword"
+                android:layout_centerVertical="true"
+                android:paddingBottom="2dip"
+                android:paddingLeft="5dip"
+                android:paddingRight="8dip"
+                android:paddingTop="2dip"
+                android:text="show"
+                android:textColor="@color/dirty_white" />
+
+        </RelativeLayout>
+
+        <com.neopixl.pixlui.components.textview.TextView
+            android:id="@+id/txtTimer"
+            style="@style/AppTheme.StyledText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dip"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@color/black"
+            android:visibility="visible" />
+
+        <com.neopixl.pixlui.components.textview.TextView
+            android:id="@+id/txtResendOTP"
+            style="@style/AppTheme.StyledText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="15dip"
+            android:clickable="true"
+            android:padding="5dip"
+            android:text="@string/confirm_otp_resend"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btnConfirmOTP"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/abc_alpha_btn_background"
+            android:text="@string/continue_otp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</LinearLayout>

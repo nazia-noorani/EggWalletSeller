@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_pay_id"
+        android:icon="@mipmap/ic_profile_customers"
+        android:title="Mobile Number" />
+    <item
+        android:id="@+id/action_pay_qr"
+        android:icon="@mipmap/ic_profile_offers"
+        android:title="Scan QR Code" />
+    <item
+        android:id="@+id/action_pay_qr_image"
+        android:icon="@mipmap/ic_profile_offers"
+        android:title="Pick QR Image" />
+
+
+</menu>

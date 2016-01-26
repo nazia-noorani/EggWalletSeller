@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/paper"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <com.neopixl.pixlui.components.textview.TextView
+                        android:id="@+id/txtUpdateProfileTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:alpha="0.5"
+                        android:background="@android:color/transparent"
+                        android:text="PERSONAL INFORMATION"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/black" />
+
+                    <com.egneese.sellers.ui.CustomEditText
+                        android:id="@+id/etName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/transparent"
+                        android:drawableLeft="@drawable/ic_arrow_drop_down_white_24dp"
+                        android:hint="Name"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="#DDAAAAAA"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:alpha="0.5"
+                        android:background="?android:attr/listDivider" />
+
+                    <com.egneese.sellers.ui.CustomEditText
+                        android:id="@+id/etMobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/transparent"
+                        android:drawableLeft="@drawable/ic_arrow_drop_down_white_24dp"
+                        android:editable="false"
+                        android:hint="Mobile Number"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="#DDAAAAAA"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:alpha="0.5"
+                        android:background="?android:attr/listDivider" />
+
+                    <com.egneese.sellers.ui.CustomEditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/transparent"
+                        android:drawableLeft="@drawable/ic_arrow_drop_down_white_24dp"
+                        android:hint="Email (Optional)"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="#DDAAAAAA"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:alpha="0.5"
+                        android:background="?android:attr/listDivider" />
+
+                    <com.neopixl.pixlui.components.textview.TextView
+                        android:id="@+id/txtDOB"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:alpha="0.5"
+                        style="@style/AppTheme.StyledText"
+                        android:drawableLeft="@drawable/ic_arrow_drop_down_white_24dp"
+                        android:text="Date of Birth"
+                        android:textColor="@color/black" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:alpha="0.5"
+                        android:background="?android:attr/listDivider" />
+
+                    <!--<RadioGroup
+                        android:id="@+id/rdgpGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rdbtnMale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/abc_alpha_rdbtn_male_background"
+                            android:button="@null" />
+
+                        <com.neopixl.pixlui.components.textview.TextView
+                            android:id="@+id/txtMale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:alpha="0.5"
+                            android:background="@color/transparent"
+                            android:text="Male"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/black" />
+
+                        <RadioButton
+                            android:id="@+id/rdbtnFemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/abc_alpha_rdbtn_female_background"
+                            android:button="@null" />
+
+                        <com.neopixl.pixlui.components.textview.TextView
+                            android:id="@+id/txtFemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:alpha="0.5"
+                            android:background="@color/transparent"
+                            android:text="Female"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/black" />
+                    </RadioGroup>-->
+
+                    <com.neopixl.pixlui.components.textview.TextView
+                        android:id="@+id/txtGender"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:alpha="0.5"
+                        style="@style/AppTheme.StyledText"
+                        android:drawableLeft="@drawable/ic_arrow_drop_down_white_24dp"
+                        android:text="Gender"
+                        android:textColor="@color/black" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:alpha="0.5"
+                        android:background="?android:attr/listDivider" />
+
+                    <com.neopixl.pixlui.components.textview.TextView
+                        android:id="@+id/txtSelectCity"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:alpha="0.5"
+                        style="@style/AppTheme.StyledText"
+                        android:drawableLeft="@drawable/ic_arrow_drop_down_white_24dp"
+                        android:text="Address"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/btnContinue"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/abc_alpha_btn_background"
+                android:text="@string/continue_otp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

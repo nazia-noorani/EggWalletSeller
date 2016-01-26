@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/lib-auto"
+    xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_center" />
+
+    <ScrollView
+        android:id="@+id/scrollViewProfile"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_green">
+
+                <com.pkmmte.view.CircularImageView
+                    android:id="@+id/imgProfilePic"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="20dp"
+                    android:clickable="true"
+                    android:src="@drawable/doge"
+                    app:civ_border="true"
+                    app:civ_borderColor="#FFFFFFFF"
+                    app:civ_borderWidth="4dp"
+                    app:civ_selector="true"
+                    app:civ_selectorColor="#4403a9f4"
+                    app:civ_selectorStrokeColor="#aa5677fc"
+                    app:civ_selectorStrokeWidth="4dp"
+                    app:civ_shadow="true" />
+
+                <com.neopixl.pixlui.components.textview.TextView
+                    android:id="@+id/txtShopName"
+                    style="@style/AppTheme.StyledText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgProfilePic"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    pixlui:clearclipboardcontent="true"
+                    pixlui:copyandpaste="false" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/viewProiflePic"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="-52dp"
+                android:background="@drawable/semicircle" />
+
+            <com.egnese.buyers.ui.ExpandableHeightGridView
+                android:id="@+id/gridProfileItems"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:isScrollContainer="false"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="25dp" />
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/abc_alpha_btn_background"
+                android:text="@string/logout"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
